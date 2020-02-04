@@ -1,0 +1,132 @@
+! TODO consider base16-xresources colorschemes
+
+! tangoesque colors {{{
+*.background:        #000000
+*.foreground:        #ffffff
+*color0:  #2E3436
+*color1:  #a40000
+*color2:  #4E9A06
+*color3:  #C4A000
+*color4:  #3465A4
+*color5:  #75507B
+*color6:  #ce5c00
+*color7:  #babdb9
+*color8:  #555753
+*color9:  #EF2929
+*color10: #8AE234
+*color11: #FCE94F
+*color12: #729FCF
+*color13: #AD7FA8
+*color14: #fcaf3e
+*color15: #EEEEEC
+! }}}
+
+! purplish {{{
+! special colors
+!*.foreground:  #a39e9b
+!*.background:  #2f1e2e
+!*.cursorColor:  #a39e9b
+!! black
+!*.color0:      #2f1e2e
+!*.color8:      #776e71
+!! red
+!*.color1:      #ef6155
+!*.color9:      #ef6155
+!! green
+!*.color2:      #48b685
+!*.color10:     #48b685
+!! yellow
+!*.color3:      #fec418
+!*.color11:     #fec418
+!! blue
+!*.color4:      #06b6ef
+!*.color12:     #06b6ef
+!! magenta
+!*.color5:      #815ba4
+!*.color13:     #815ba4
+!! cyan
+!*.color6:      #5bc4bf
+!*.color14:     #5bc4bf
+!! white
+!*.color7:      #a39e9b
+!*.color15:     #e7e9db
+! }}}
+
+! ocean dark {{{
+! special colors
+!*.foreground:  #c0c5ce
+!*.background:  #2b303b
+!*.cursorColor:  #c0c5ce
+!! black
+!*.color0:      #2b303b
+!*.color8:      #65737e
+!! red
+!*.color1:      #bf616a
+!*.color9:      #bf616a
+!! green
+!*.color2:      #a3be8c
+!*.color10:     #a3be8c
+!! yellow
+!*.color3:      #ebcb8b
+!*.color11:     #ebcb8b
+!! blue
+!*.color4:      #8fa1b3
+!*.color12:     #8fa1b3
+!! magenta
+!*.color5:      #b48ead
+!*.color13:     #b48ead
+!! cyan
+!*.color6:      #96b5b4
+!*.color14:     #96b5b4
+!! white
+!*.color7:      #c0c5ce
+!*.color15:     #eff1f5
+!!}}}
+
+! fonts {{{
+URxvt.font:              xft:terminus:pixelsize=12
+!URxvt.font:              xft:terminus:pixelsize=14
+!URxvt.font:              xft:Inconsolata:pixelsize=14
+!URxvt.font:              xft:terminus:pixelsize=12:antialias=true
+!URxvt.font:              xft:Monospace:pixelsize=11
+!URxvt.font:              xft:Monospace:pixelsize=12
+!URxvt.font:              xft:DejaVu Sans Mono:pixelsize=11
+!URxvt.font:              xft:Bitstream Vera Sans Mono:antialias=false:autohinting=true:pixelsize=11
+!URxvt.font:              xft:Bitstream Vera Sans Mono:autohinting=true:pixelsize=10
+!URxvt.font:              xft:Droid Sans Mono:antialias=false:pixelsize=11
+!URxvt.font:              xft:Droid Sans Mono:pixelsize=12
+!URxvt.font:              xft:Droid Sans Mono:pixelsize=16
+!URxvt.font:              xft:Droid Sans Mono:pixelsize=12
+#URxvt.font:              xft:Noto Mono:pixelsize=10
+!URxvt.font:              xft:Andale Mono:pixelsize=11
+!URxvt.letterSpace: 0
+!}}}
+
+! URxvt stuff {{{
+URxvt.scrollBar:         false
+!URxvt.backgroundPixmap:  /home/mutex/.themes/URxvt.back.xpm
+URxvt.imLocale:          en_US.UTF-8
+URxvt.loginShell:        true
+URxvt.saveLines:         65535
+!URxvt.geometry:          190x70
+URxvt.inheritPixmap:     false
+! URxvt.shading:           30
+URxvt.xftAntialias:      true
+!*antialias:  false
+!*autohint:   false
+URxvt.jumpScroll:        true
+! URxvt.tintColor:         white
+URxvt.internalBorder:    0
+URxvt.cursorBlink:       true
+URxvt.cursorColor:       #dd9900
+URxvt.cursorColor2:      #000000
+URxvt.colorBD:           #ffffff
+URxvt.colorIT:           #ffffff
+URxvt.colorUL:           #999999
+URxvt.underlineColor:    #999999
+urxvt*iso14755:          false
+urxvt*iso14755_52:       false
+!}}}
+
+# some weird hack for middle mouse clicking with tmux
+*URxvt.perl-ext-common: osc-xterm-clipboard
